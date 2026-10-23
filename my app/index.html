@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f4ef">
+  <title>Weather — Portland</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="weather-app">
+    <header class="topbar">
+      <a class="brand" href="#today" aria-label="Weather home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>daylight<span class="brand-period">.</span></span>
+      </a>
+      <div class="topbar-right">
+        <span class="updated"><span class="live-dot"></span> Local weather</span>
+        <span class="date-label">Friday, October 23</span>
+      </div>
+    </header>
+
+    <section class="weather-hero" id="today" aria-labelledby="city-name">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR WEATHER, RIGHT NOW</p>
+        <h1 id="city-name">Portland<span>, Oregon</span></h1>
+        <p class="condition">A little sun between the clouds</p>
+        <div class="temperature-row">
+          <span class="temperature">18<span class="degree">°</span></span>
+          <div class="weather-symbol" aria-label="Partly cloudy" role="img">
+            <span class="sun"></span><span class="cloud"></span>
+          </div>
+        </div>
+        <p class="feels-like">Feels like 17° <span class="separator">/</span> H: 21° &nbsp; L: 13°</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Sunlight breaking through clouds over a green landscape">
+        <div class="art-caption"><span>01</span> A brighter patch of the day</div>
+      </div>
+      <div class="hero-bottom">
+        <span>FRIDAY, OCTOBER 23</span>
+        <span>45.52° N &nbsp; 122.68° W</span>
+      </div>
+    </section>
+
+    <section class="details-grid" aria-label="Forecast details">
+      <section class="hourly-panel" aria-labelledby="hourly-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE NEXT FEW HOURS</p>
+            <h2 id="hourly-title">Today, by the hour</h2>
+          </div>
+          <span class="section-note">Rain ending by 4 pm</span>
+        </div>
+        <div class="hourly-list">
+          <div class="hour"><span class="hour-time">Now</span><span class="mini-weather partly" aria-hidden="true"></span><span class="hour-temp">18°</span><span class="rain-chance">10%</span></div>
+          <div class="hour"><span class="hour-time">2 pm</span><span class="mini-weather sun-only" aria-hidden="true"></span><span class="hour-temp">19°</span><span class="rain-chance">5%</span></div>
+          <div class="hour"><span class="hour-time">3 pm</span><span class="mini-weather sun-only" aria-hidden="true"></span><span class="hour-temp">20°</span><span class="rain-chance">0%</span></div>
+          <div class="hour"><span class="hour-time">4 pm</span><span class="mini-weather partly" aria-hidden="true"></span><span class="hour-temp">19°</span><span class="rain-chance">0%</span></div>
+          <div class="hour"><span class="hour-time">5 pm</span><span class="mini-weather cloud-only" aria-hidden="true"></span><span class="hour-temp">17°</span><span class="rain-chance">5%</span></div>
+          <div class="hour"><span class="hour-time">6 pm</span><span class="mini-weather cloud-only" aria-hidden="true"></span><span class="hour-temp">16°</span><span class="rain-chance">10%</span></div>
+        </div>
+      </section>
+
+      <section class="week-panel" aria-labelledby="week-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A LOOK AHEAD</p>
+            <h2 id="week-title">The week</h2>
+          </div>
+          <span class="week-unit">°C</span>
+        </div>
+        <div class="week-list">
+          <div class="day-row"><span class="day-name">Today</span><span class="mini-weather partly" aria-hidden="true"></span><span class="day-condition">Partly cloudy</span><span class="day-low">13°</span><span class="day-high">21°</span></div>
+          <div class="day-row"><span class="day-name">Sat</span><span class="mini-weather rain" aria-hidden="true"></span><span class="day-condition">Light rain</span><span class="day-low">12°</span><span class="day-high">17°</span></div>
+          <div class="day-row"><span class="day-name">Sun</span><span class="mini-weather cloud-only" aria-hidden="true"></span><span class="day-condition">Cloudy</span><span class="day-low">11°</span><span class="day-high">16°</span></div>
+          <div class="day-row"><span class="day-name">Mon</span><span class="mini-weather partly" aria-hidden="true"></span><span class="day-condition">Partly cloudy</span><span class="day-low">10°</span><span class="day-high">18°</span></div>
+          <div class="day-row"><span class="day-name">Tue</span><span class="mini-weather sun-only" aria-hidden="true"></span><span class="day-condition">Mostly sunny</span><span class="day-low">12°</span><span class="day-high">22°</span></div>
+          <div class="day-row"><span class="day-name">Wed</span><span class="mini-weather rain" aria-hidden="true"></span><span class="day-condition">Showers</span><span class="day-low">13°</span><span class="day-high">18°</span></div>
+          <div class="day-row"><span class="day-name">Thu</span><span class="mini-weather partly" aria-hidden="true"></span><span class="day-condition">Partly cloudy</span><span class="day-low">11°</span><span class="day-high">19°</span></div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span>Made for the small moments outside.</span>
+      <span>Static weather preview · Not live data</span>
+    </footer>
+  </main>
+</body>
+</html>
